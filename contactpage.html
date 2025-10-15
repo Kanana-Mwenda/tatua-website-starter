@@ -6,7 +6,7 @@
     <title>Contact Us - Tatua Solutions</title>
     <meta name="description" content="Get in touch with Tatua's team. Start your free trial or schedule a demo to see how we can transform your support operations."
 </head>
-<body>
+
     <nav class="contactnav">
         <a href="homepage.html">Home</a>
         <a href="contactpage.html">Contact</a>
@@ -58,6 +58,128 @@
         <h3 class="emergency-support">Emergency Support</h3>
         <p>24/7 emergency support available for Enterprise customers</p>
     </section>
+
+    <!-- contact form section-->
+    <!-- personal info fieldset-->
+        <form>
+            <fieldset>
+            <legend> Contact Information </legend>
+            <label for="fullname">Full Name: </label><br>
+            <input type="text" id ="fullname" name="fullname" required minlength="2" maxlength="50" placeholder="Enter your full name">
+            <label for="emailaddress">Email Address: </label>
+            <input type="email" id="email" name="emailaddress" required placeholder="you@company.com">
+            <label for="companyname">Company Name: </label>
+            <input type="text" id="companyname" name="companyname" required minlength="2" maxlength="100" placeholder="Your company name">
+            <label for="phone">Phone Number (optional): </label>
+            <input type="tel" id="phonenumber" name="phonenumber" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            </fieldset>
+        </form>
+
+    <!-- inquiry details fieldset-->
+        <form>
+            <fieldset>
+                <legend> Tell us about your needs</legend>
+                <label for="inquiry-type">Inquiry Type: </label>
+                <select id="inquiries" name="inquiries" required>
+                    <option value="Please select...">Please select...</option>
+                    <option value="Sales Inquiry"> Sales Inquiry</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Partnership Opportunity">Partnership Opportunity</option>
+                    <option value="General Question">General Question</option>
+                    <option value="Demo Request">Demo Request</option>
+                </select>
+
+                <label for="companysize">Company Size: </label>
+                <select id="companysize" name="companysize" required>
+                    <option value="Please select...">Please select...</option>
+                    <option value="1-10 employees">1-10 employees</option>
+                    <option value="11-50 employees">11-50 employees</option>
+                    <option value="51-200 employees">51-200 employees</option>
+                    <option value="201-1000 employees">201-1000 employees</option>
+                    <option value="1000+ employees">1000 employees</option>
+                </select>
+
+                <label for="current-ticketing-system">Current Ticketing System: </label>
+                <select id="ticketing" name="ticketing">
+                    <option value="None currently">None currently</option>
+                    <option value="Zendesk">Zendesk</option>
+                    <option value="ServiceNow">ServiceNow</option>
+                    <option value="Freshdesk">Freshdesk</option>
+                    <option value="Jira Service Management">Jira Service Management</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="budget-range">Budget Range: </label>
+                <select id="budget" name="budget-range">
+                    <option value="Under $1,000/month">Under $1,000/month</option>
+                    <option value="$1,000 - $5000/month">$1,000 - $5,000/month</option>
+                    <option value="$5,000 - $15,000/month">$5,000 - $15,000/month</option>
+                    <option value="$15,000+/month">$15,000+/month</option>
+                    <option value="Enterprise (custom pricing)">Enterprise (custom pricing)</option>
+                </select>
+                <br>
+
+                <br>
+                <label for="implementation-timeline">Implementation Timeline:</label>
+                <select id="timeline" name="implementation-timeline">
+                    <option value="Immediate (within 1 month)">Immediate (within 1 month)</option>
+                    <option value="1-3 months">1-3 months</option>
+                    <option value="3-6 months">3-6 months</option>
+                    <option value="6+ months">6+ months</option>
+                    <option value="Just exploring options">Just exploring options</option>
+                </select>
+                <br>
+
+                <br>
+                <label for="message">Message: </label>
+                <textarea name="message" required minlength="10" maxlength="500" rows="5" placeholder="Tell us about your current challenges and what you're looking for in a ticketing solution..."></textarea>
+            </fieldset>
+        </form>
+
+        
+    <!-- preferences fieldset-->
+     <form>
+        <fieldset>
+            <legend> Communication Preferences</legend>
+            <label for="contactmethod">Preferred Contact Method: </label>
+            <select id="contact" name="contact-method" required>
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="Video Call">Video Call</option>
+            </select>
+
+            <label for="time">Best Time to Contact:</label>
+            <input type="radio" id="morning" name="morning" value="Morning(9 AM - 12 PM PST)">
+            <label for="morning">Morning (9 AM - 12 PM PST)</label>
+            <input type="radio" id="afternoon" name="afternoon" value="Afternoon (12 PM - 5 PM PST)">
+            <label for="afternoon">Afternoon (12 PM - 5 PM PST)</label>
+            <input type="radio" id="evening" name="evening" value="Evening (5 PM - 8 PM PST)">
+            <label for="evening">Evening (5 PM - 8 PM PST)</label>
+            <br>
+
+            <br>
+            <label for="newsletter">Newsletter Subscription:</label>
+            <input type="checkbox" id="newsletter">
+            <label for="newsletter">Yes, I'd like to receive product updates and industry insights</label>
+
+            <label for="terms">Terms Agreement</label>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the Terms of Service and Privacy Policy</label>
+            <br>
+            <!-- form actions-->
+             <br>
+             <button type="submit">Send Message</button>
+             <button type="reset">Clear Form</button>
+
+        </fieldset>
+     </form>
+                
+            
+
+
+
+
+
 
     <!-- office location section-->
      <section class="offices">
